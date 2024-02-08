@@ -27,9 +27,5 @@ node {
         // Your deployment steps here
         echo 'Deploying...'
     }
-    post {
-        success {    // notify users when the Pipeline fails
-            mail(to: 'vibhavbhegde05@gmail.com', subject: "Pipeline Success", body: "Deployed.....")
-        }
-    }
+   
 }
